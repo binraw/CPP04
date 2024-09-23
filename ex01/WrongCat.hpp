@@ -8,7 +8,7 @@ private:
     /* data */
 public:
     WrongCat();
-    WrongCat(WrongCat &other);
+    WrongCat(const WrongCat &other);
     WrongCat &operator=(const WrongCat &other);
     void makeSound(void);
     ~WrongCat();

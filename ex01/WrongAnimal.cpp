@@ -17,7 +17,7 @@ WrongAnimal::WrongAnimal(std::string type)
     this->type = type;
 }
 
-WrongAnimal::WrongAnimal(WrongAnimal &other)
+WrongAnimal::WrongAnimal(const WrongAnimal &other)
 {
     std::cout << "Copy Wrong Constructor Animal called" << std::endl;
     *this = other;

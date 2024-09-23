@@ -6,32 +6,23 @@
 
 int main()
 {
-Animal meta;
-const Animal* met = new Animal();
+const Animal* a = new Dog();
+const Animal* b = new Cat();
+std::cout << a->getType() << " " << std::endl;
+std::cout << b->getType() << " " << std::endl;
+a->makeSound(); 
+b->makeSound();
+delete a;
+delete b;
 const Animal* j = new Dog();
 const Animal* i = new Cat();
-WrongAnimal* wrong = new WrongCat();
-Dog ko;
-Cat fusee;
-WrongCat boss;
-std::cout << j->getType() << " " << std::endl;
-std::cout << ko.getType() << " " << std::endl;
-std::cout << fusee.getType() << " " << std::endl;
-std::cout << i->getType() << " " << std::endl;
-std::cout << boss.getType() << " " << std::endl;
-std::cout << wrong->getType() << " " << std::endl;
-i->makeSound(); 
-j->makeSound();
-ko.makeSound();
-meta.makeSound();
-met->getType();
-fusee.makeSound();
-boss.makeSound();
-wrong->makeSound();
-
+Dog bobby;
+bobby.getBrain()->setIdea(0, "la vie est dure");
+std::cout << bobby.getBrain()->getIdea(0) << std::endl;
+Dog ours;
+ours = bobby;
+std::cout << ours.getBrain()->getIdea(0) << std::endl;
 delete j;
 delete i;
-delete met;
-delete wrong;
 return 0;
 }

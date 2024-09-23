@@ -1,8 +1,8 @@
 NAME = Animal
 
 
-SRCS_FILE = Animal.cpp main.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp
-HEADER_FILE = Animal.hpp Cat.hpp Dog.hpp WrongAnimal.hpp WrongCat.hpp
+SRCS_FILE = Animal.cpp main.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
+HEADER_FILE = Animal.hpp Cat.hpp Dog.hpp WrongAnimal.hpp WrongCat.hpp Brain.hpp
 
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98

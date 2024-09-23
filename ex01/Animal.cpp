@@ -18,12 +18,13 @@ Animal::Animal(std::string type)
     std::cout << "Constructor Animal called" << std::endl;
     this->type = type;
 }
-Animal::Animal(Animal &other)
+Animal::Animal(const Animal &other)
 {
     std::cout << "Copy Constructor Animal called" << std::endl;
     *this = other;
 
 }
+
 Animal &Animal::operator=(const Animal &other)
 {
     std::cout << "Copy assignment operator called" << std::endl;

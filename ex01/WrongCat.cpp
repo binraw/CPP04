@@ -11,7 +11,7 @@ WrongCat::~WrongCat()
      std::cout << "Destructor Wrong Cat called" << std::endl;
 }
 
-WrongCat::WrongCat(WrongCat &other)
+WrongCat::WrongCat(const WrongCat &other)
 {
     std::cout << "Copy constructor Wrong Cat called" << std::endl;
     *this = other;
