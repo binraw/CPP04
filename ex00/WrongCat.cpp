@@ -2,23 +2,24 @@
 
 WrongCat::WrongCat()
 {
-    std::cout << "Constructor Wrong Cat called" << std::endl;
+    std::cout << GREEEN "Constructor Wrong Cat called" RESET << std::endl;
     this->type = "Wrong Cat";
 }
 
 WrongCat::~WrongCat()
 {
-     std::cout << "Destructor Wrong Cat called" << std::endl;
+     std::cout << GREEEN "Destructor Wrong Cat called" RESET << std::endl;
 }
 
 WrongCat::WrongCat(WrongCat &other)
 {
-    std::cout << "Copy constructor Wrong Cat called" << std::endl;
+    std::cout << GREEEN "Copy constructor Wrong Cat called" RESET << std::endl;
     *this = other;
 }
 
 WrongCat &WrongCat::operator=(const WrongCat &other)
 {
+     std::cout << GREEEN "Copy Wrong Cat assignment operator called" RESET << std::endl;
     if (this != &other)
     {
         this->type = other.type;
@@ -28,5 +29,5 @@ WrongCat &WrongCat::operator=(const WrongCat &other)
 
 void WrongCat::makeSound(void)
 {
-    std::cout << "Wrong sound cat!" << std::endl;
+    std::cout << GREEEN "Wrong sound cat!" RESET << std::endl;
 }

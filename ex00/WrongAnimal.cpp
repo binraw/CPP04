@@ -2,30 +2,30 @@
 
 WrongAnimal::WrongAnimal()
 {
-    std::cout << "Wrong Constructor Animal default called" << std::endl;
+    std::cout << MAGENTA "Wrong Constructor Animal default called" RESET << std::endl;
     this->type = "Wrong mammal";
 }
 
 WrongAnimal::~WrongAnimal()
 {
-    std::cout << "Wrong Destructor called" << std::endl;
+    std::cout << MAGENTA "Wrong Destructor called" RESET << std::endl;
 }
 
 WrongAnimal::WrongAnimal(std::string type)
 {
-    std::cout << "Wrong Constructor Animal called" << std::endl;
+    std::cout << MAGENTA "Wrong Constructor Animal called" RESET << std::endl;
     this->type = type;
 }
 
 WrongAnimal::WrongAnimal(WrongAnimal &other)
 {
-    std::cout << "Copy Wrong Constructor Animal called" << std::endl;
+    std::cout << MAGENTA "Copy Wrong Constructor Animal called" RESET << std::endl;
     *this = other;
 }
 
 WrongAnimal &WrongAnimal::operator=(const WrongAnimal &other)
 {
-    std::cout << "Copy assignment operator called" << std::endl;
+    std::cout << MAGENTA "Copy assignment operator called" RESET << std::endl;
     if (this != &other)
     {
         this->type = other.type;
@@ -38,5 +38,5 @@ std::string WrongAnimal::getType(void)
 }
 void WrongAnimal::makeSound(void)
 {
-    std::cout << "Pouloulou" << std::endl;
+    std::cout << MAGENTA "Pouloulou" RESET << std::endl;
 }

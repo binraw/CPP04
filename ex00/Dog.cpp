@@ -2,18 +2,18 @@
 
 Dog::Dog()
 {
-    std::cout << BOLD "Constructor Dog called" RESET << std::endl;
+    std::cout << YELLOW "Constructor Dog called" RESET << std::endl;
     this->type = "Dog";
 }
 
 Dog::~Dog()
 {
-    std::cout << "Destructor Dog called" << std::endl;
+    std::cout << YELLOW "Destructor Dog called" RESET << std::endl;
 }
 
 Dog::Dog(Dog &other)
 {
-    std::cout << "Copy constructor Dog called" << std::endl;
+    std::cout << YELLOW "Copy constructor Dog called" RESET << std::endl;
     *this = other;
 }
 
@@ -28,5 +28,5 @@ Dog &Dog::operator=(const Dog &other)
 
 void Dog::makeSound(void) const
 {
-    std::cout << BLUE "Wouuuaff Wouaaff Woaf" RESET << std::endl;
+    std::cout << YELLOW "Wouuuaff Wouaaff Woaf" RESET << std::endl;
 }
