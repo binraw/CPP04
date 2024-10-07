@@ -2,13 +2,13 @@
 
 WrongAnimal::WrongAnimal()
 {
-    std::cout << " Wrong Constructor Animal default called" << std::endl;
+    std::cout << "Wrong Constructor Animal default called" << std::endl;
     this->type = "Wrong mammal";
 }
 
 WrongAnimal::~WrongAnimal()
 {
-    std::cout << " Wrong Destructor called" << std::endl;
+    std::cout << "Wrong Destructor called" << std::endl;
 }
 
 WrongAnimal::WrongAnimal(std::string type)

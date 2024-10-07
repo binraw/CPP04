@@ -2,31 +2,31 @@
 
 Animal::Animal()
 {
-    std::cout << "Constructor Animal default called" << std::endl;
+    std::cout  << GREEN "Constructor Animal default called" RESET << std::endl;
     this->type = "mammal";
 }
 
 Animal::~Animal()
 {
-    std::cout << "Destructor called" << std::endl;
+    std::cout << RED "Destructor called" RESET << std::endl;
 }
 
 
 
 Animal::Animal(std::string type)
 {
-    std::cout << "Constructor Animal called" << std::endl;
+    std::cout << YELLOW "Constructor Animal called" RESET << std::endl;
     this->type = type;
 }
 Animal::Animal(Animal &other)
 {
-    std::cout << "Copy Constructor Animal called" << std::endl;
+    std::cout << MAGENTA "Copy Constructor Animal called" RESET << std::endl;
     *this = other;
 
 }
 Animal &Animal::operator=(const Animal &other)
 {
-    std::cout << "Copy assignment operator called" << std::endl;
+    std::cout << BLUE "Copy assignment operator called" RESET << std::endl;
     if (this != &other)
     {
         this->type = other.type;
@@ -41,5 +41,5 @@ std::string Animal::getType(void) const
 
 void Animal::makeSound(void) const
 {
-    std::cout << "Wesh la zone" << std::endl;
+    std::cout << CYAN "Wesh la zone" RESET << std::endl;
 }

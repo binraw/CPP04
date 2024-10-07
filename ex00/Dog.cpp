@@ -2,7 +2,7 @@
 
 Dog::Dog()
 {
-    std::cout << "Constructor Dog called" << std::endl;
+    std::cout << BOLD "Constructor Dog called" RESET << std::endl;
     this->type = "Dog";
 }
 
@@ -28,5 +28,5 @@ Dog &Dog::operator=(const Dog &other)
 
 void Dog::makeSound(void) const
 {
-    std::cout << "Wouuuaff Wouaaff Woaf" << std::endl;
+    std::cout << BLUE "Wouuuaff Wouaaff Woaf" RESET << std::endl;
 }

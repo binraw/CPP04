@@ -2,7 +2,7 @@
 
 Cat::Cat()
 {
-    std::cout << "Constructor Cat called" << std::endl;
+    std::cout << BOLD "Constructor Cat called" RESET << std::endl;
     this->type = "Cat";
 }
 
@@ -29,7 +29,7 @@ Cat &Cat::operator=(const Cat &other)
 
 void Cat::makeSound(void) const
 {
-    std::cout << "Miaaaaaaooooowwwwww" << std::endl;
+    std::cout << REV "Miaaaaaaooooowwwwww" RESET << std::endl;
 }
 
 
